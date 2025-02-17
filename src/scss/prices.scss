@@ -1,0 +1,33 @@
+.prices {
+  padding-top: 40px;
+  padding-bottom: 40px;
+  background-color: $_brand-color;
+}
+.prices-title {
+  color: $_secondary-color;
+  margin-bottom: 20px;
+  text-align: center;
+}
+.prices-list {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.prices-card {
+  background-color: $_background-color;
+  padding: 15px;
+  border-radius: 20px;
+}
+.prices-card-title {
+  margin-bottom: 10px;
+}
+.prices-card-description {
+  @include font(16, 20);
+  margin-bottom: 10px;
+}
+.prices-card-price {
+  background-color: $_brand-color;
+  padding: 10px 15px;
+  border-radius: 20px;
+  color: $_secondary-color;
+}

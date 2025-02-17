@@ -1,0 +1,113 @@
+.swiper {
+  // width: 600px;
+  // height: 600px;
+  --swiper-navigation-color: #118509;
+  --swiper-pagination-color: #801c5c;
+}
+.teachers {
+  padding-top: 40px;
+  background-color: $_brand-color;
+}
+.teachers-title {
+  color: $_secondary-color;
+  margin-bottom: 30px;
+}
+.swiper {
+  position: relative;
+  width: 100%;
+}
+
+.swiper-slide {
+}
+
+.swiper-button-next,
+.swiper-button-prev {
+  position: absolute;
+  border-radius: 50%; /* Round the buttons */
+}
+
+.swiper-button-next:hover,
+.swiper-button-prev:hover {
+  background-color: $_accent-color; /* Button hover color */
+  color: $_secondary-color;
+}
+.swiper-wrapper {
+  position: relative;
+}
+.swiper-pagination {
+  width: 100%;
+}
+
+.swiper-pagination-bullet {
+  background-color: #3498db; /* Pagination bullet color */
+}
+
+.swiper-pagination-bullet-active {
+  background-color: #2980b9; /* Active bullet color */
+}
+
+.teachers-list {
+}
+
+.teachers-item {
+  background-color: $_background-color;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  min-height: 710px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* Hover effect on the card */
+.teachers-item:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.2);
+}
+
+/* Teacher's image */
+.teachers-item-img {
+  width: 100%; /* Full width image */
+  height: 200px; /* Fixed height for consistency */
+  object-fit: cover; /* Crop image to fit */
+  min-height: 350px;
+  border-bottom: 4px solid $_contrast-color; /* Blue border under the image */
+  transition: transform 0.3s ease; /* Smooth zoom effect on hover */
+}
+
+.teachers-item-img:hover {
+  transform: scale(1.05); /* Zoom effect on hover */
+}
+
+/* Teacher's name */
+.teachers-item h3 {
+  font-size: 1.5rem; /* Slightly larger font size for name */
+  font-weight: bold; /* Make the name stand out */
+  color: $_hover_color; /* Dark blue-gray color */
+  margin: 15px 20px 10px 20px; /* Space around the name */
+  text-align: center; /* Center the name */
+}
+
+/* Teacher's qualifications list */
+.teachers-item ul {
+  padding: 0 20px 20px 30px; /* Padding around the list */
+  list-style-type: none; /* Remove default list bullets */
+  font-size: 0.9rem; /* Smaller text for qualifications */
+  color: #7f8c8d; /* Light gray color */
+  line-height: 1.5; /* Increase line spacing for readability */
+}
+
+/* Each list item */
+.teachers-item ul li {
+  margin-bottom: 8px; /* Space between each item */
+  position: relative; /* Needed for adding custom bullet style */
+}
+
+/* Custom bullet style */
+.teachers-item ul li::before {
+  content: '•'; /* Custom bullet */
+  position: absolute;
+  left: -18px; /* Position the bullet outside the text */
+  top: 0;
+  color: $_brand-color; /* Blue color for bullets */
+  font-size: 1.2rem; /* Slightly larger bullet */
+}

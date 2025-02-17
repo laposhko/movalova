@@ -37,7 +37,15 @@ a {
 }
 
 button {
-  cursor: pointer;
+  all: unset; /* Resets all properties */
+  display: inline-block; /* Makes the button inline */
+  padding: 0; /* Remove padding */
+  margin: 0; /* Remove margin */
+  font: inherit; /* Inherit the font */
+  background: none; /* Remove background */
+  border: none; /* Remove border */
+  text-align: inherit; /* Inherit text alignment */
+  cursor: pointer; /* Set cursor to pointer */
 }
 
 img {

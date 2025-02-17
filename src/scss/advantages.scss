@@ -1,0 +1,19 @@
+.advantages {
+  padding-top: 40px;
+}
+.advantages-title {
+  color: $_brand_color;
+  margin-bottom: 20px;
+}
+.advantages-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+.advantages-item {
+  flex-basis: calc(100% / 3 - 8px);
+  background-color: $_brand_color;
+  border-radius: 15px;
+  padding: 10px;
+  color: $_secondary-color;
+}

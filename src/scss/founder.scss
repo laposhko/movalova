@@ -1,0 +1,23 @@
+.founder {
+  padding-top: 40px;
+}
+.founder-title {
+  margin-bottom: 20px;
+  color: $_brand-color;
+}
+.founder-block {
+  display: flex;
+  gap: 20px;
+}
+.founder-img {
+  width: 40%;
+}
+.founder-info {
+}
+.founder-name {
+  @include font(20, 30);
+  margin-bottom: 10px;
+}
+.founder-description {
+  display: block;
+}
