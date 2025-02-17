@@ -1,5 +1,12 @@
 @use 'sass:math';
-@import './breakpoints';
+@use './breakpoints';
+// @import 'common/breakpoints';
+$mobile: 375px;
+$to-tablet: 767.98px;
+$tablet: 768px;
+$to-desktop: 1439.98px;
+$desktop: 1440px;
+
 /*
 screen types: 
     mobile,

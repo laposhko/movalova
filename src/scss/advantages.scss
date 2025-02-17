@@ -1,8 +1,10 @@
+@import 'common/vars';
+
 .advantages {
   padding-top: 40px;
 }
 .advantages-title {
-  color: $_brand_color;
+  color: $brand_color;
   margin-bottom: 20px;
 }
 .advantages-list {
@@ -12,8 +14,8 @@
 }
 .advantages-item {
   flex-basis: calc(100% / 3 - 8px);
-  background-color: $_brand_color;
+  background-color: $brand_color;
   border-radius: 15px;
   padding: 10px;
-  color: $_secondary-color;
+  color: $secondary-color;
 }

@@ -1,3 +1,4 @@
+@import 'common/vars';
 .swiper {
   // width: 600px;
   // height: 600px;
@@ -6,10 +7,10 @@
 }
 .teachers {
   padding-top: 40px;
-  background-color: $_brand-color;
+  background-color: $brand-color;
 }
 .teachers-title {
-  color: $_secondary-color;
+  color: $secondary-color;
   margin-bottom: 30px;
 }
 .swiper {
@@ -28,8 +29,8 @@
 
 .swiper-button-next:hover,
 .swiper-button-prev:hover {
-  background-color: $_accent-color; /* Button hover color */
-  color: $_secondary-color;
+  background-color: $accent-color; /* Button hover color */
+  color: $secondary-color;
 }
 .swiper-wrapper {
   position: relative;
@@ -50,7 +51,7 @@
 }
 
 .teachers-item {
-  background-color: $_background-color;
+  background-color: $background-color;
   border-radius: 10px;
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
   overflow: hidden;
@@ -70,7 +71,7 @@
   height: 200px; /* Fixed height for consistency */
   object-fit: cover; /* Crop image to fit */
   min-height: 350px;
-  border-bottom: 4px solid $_contrast-color; /* Blue border under the image */
+  border-bottom: 4px solid $contrast-color; /* Blue border under the image */
   transition: transform 0.3s ease; /* Smooth zoom effect on hover */
 }
 
@@ -82,7 +83,7 @@
 .teachers-item h3 {
   font-size: 1.5rem; /* Slightly larger font size for name */
   font-weight: bold; /* Make the name stand out */
-  color: $_hover_color; /* Dark blue-gray color */
+  color: $hover_color; /* Dark blue-gray color */
   margin: 15px 20px 10px 20px; /* Space around the name */
   text-align: center; /* Center the name */
 }
@@ -108,6 +109,6 @@
   position: absolute;
   left: -18px; /* Position the bullet outside the text */
   top: 0;
-  color: $_brand-color; /* Blue color for bullets */
+  color: $brand-color; /* Blue color for bullets */
   font-size: 1.2rem; /* Slightly larger bullet */
 }

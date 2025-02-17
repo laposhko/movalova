@@ -1,9 +1,12 @@
+@import 'common/vars';
+@import 'common/mixins';
+
 .founder {
   padding-top: 40px;
 }
 .founder-title {
   margin-bottom: 20px;
-  color: $_brand-color;
+  color: $brand-color;
 }
 .founder-block {
   display: flex;

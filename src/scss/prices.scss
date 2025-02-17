@@ -1,10 +1,13 @@
+@import 'common/vars';
+@import 'common/mixins';
+
 .prices {
   padding-top: 40px;
   padding-bottom: 40px;
-  background-color: $_brand-color;
+  background-color: $brand-color;
 }
 .prices-title {
-  color: $_secondary-color;
+  color: $secondary-color;
   margin-bottom: 20px;
   text-align: center;
 }
@@ -14,7 +17,7 @@
   gap: 10px;
 }
 .prices-card {
-  background-color: $_background-color;
+  background-color: $background-color;
   padding: 15px;
   border-radius: 20px;
 }
@@ -26,8 +29,8 @@
   margin-bottom: 10px;
 }
 .prices-card-price {
-  background-color: $_brand-color;
+  background-color: $brand-color;
   padding: 10px 15px;
   border-radius: 20px;
-  color: $_secondary-color;
+  color: $secondary-color;
 }

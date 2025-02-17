@@ -1,23 +1,23 @@
+@import 'common/vars';
 .hero {
   padding-top: 20px;
 }
 .hero-title {
-  color: $_brand_color;
+  color: $brand_color;
   margin-bottom: 20px;
   text-align: center;
-  @include font(32, 50);
 }
 .hero-text {
 }
 .hero-btn {
   display: block;
-  background-color: $_brand_color;
+  background-color: $brand_color;
   padding: 12px 18px;
   width: 300px;
   border-radius: 15px;
-  color: $_secondary-color;
+  color: $secondary-color;
   margin-top: 20px;
 }
 .hero-btn:hover {
-  background-color: $_hover-color;
+  background-color: $hover-color;
 }
