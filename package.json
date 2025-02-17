@@ -5,13 +5,14 @@
   "type": "module",
   "scripts": {
     "dev": "vite",
-    "build": "vite build --base=/movalova/",
+    "build": "vite build",
+    "deploy": "npm run build && gh-pages -d dist",
     "preview": "vite preview",
     "build:preview": "vite build && vite preview",
-    "predeploy": "npm run build",
-    "deploy": "netlify deploy -p"
+    "predeploy": "npm run build"
   },
   "devDependencies": {
+    "gh-pages": "^6.3.0",
     "glob": "^11.0.1",
     "netlify-cli": "^17.30.0",
     "sass": "^1.77.6",

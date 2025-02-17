@@ -1,13 +1,13 @@
-@import './header.scss';
-@import './hero.scss';
-@import './advantages.scss';
-@import './founder.scss';
-@import './teachers.scss';
-@import './prices.scss';
-@import './booking.scss';
-@import './faq.scss';
-@import './products.scss';
-@import './footer.scss';
+@use 'header.scss';
+@use 'hero.scss';
+@use 'advantages.scss';
+@use 'founder.scss';
+@use 'teachers.scss';
+@use 'prices.scss';
+@use 'booking.scss';
+@use 'faq.scss';
+@use 'products.scss';
+@use 'footer.scss';
 
 :root {
   font-family: Inter, Avenir, Helvetica, Arial, sans-serif;
