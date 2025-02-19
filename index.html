@@ -14,11 +14,13 @@
     <script type="module" crossorigin src="/movalova/commonHelpers3.js"></script>
     <link rel="modulepreload" crossorigin href="/movalova/assets/vendor-a12a3d32.js">
     <link rel="stylesheet" href="/movalova/assets/vendor-0ded8c46.css">
-    <link rel="stylesheet" href="/movalova/assets/index-a3959f17.css">
+    <link rel="stylesheet" href="/movalova/assets/index-2a50dc07.css">
   </head>
   <body>
     <header class="header">
-  <img class="header-logo" src="/movalova/assets/logo-green-e0ee6ba3.png" alt="movalova logo" />
+  <a href="/" class="header-logo">
+    <img src="/movalova/assets/logo-beige-d6f766e5.png" alt="movalova logo" />
+  </a>
   <nav class="header-nav">
     <ul class="header-list">
       <li class="header-list-item">
@@ -43,7 +45,8 @@
 
     <section class="container hero">
   <h1 class="hero-title">
-    Відклади дзвінки друзям - ми тут для спілкування по душам in English
+    Відклади дзвінки друзям - ми тут для спілкування по душам <br />
+    <span class="hero-accent">in English</span>
   </h1>
   <p class="hero-text">
     Ми - онлайн-школа англійської для дорослих та підлітків від 14 років, в якій
@@ -53,7 +56,10 @@
 </section>
 
     <section class="container advantages">
-  <h2 class="advantages-title">Наш підхід</h2>
+  <div class="advantages-title-wrapper">
+    <span class="advantages-dot"></span>
+    <h2 class="advantages-title">Наш підхід</h2>
+  </div>
   <ul class="advantages-list">
     <li class="advantages-item">
       Уроки будуть зібрані на онлайн платформі Figmajam куди вам безкоштовно
@@ -81,20 +87,42 @@
   </ul>
 </section>
 
-    <section class="container founder">
+    <!-- <section class="container founder">
   <h2 class="founder-title">Наша засновниця</h2>
   <div class="founder-block">
-    <img
-      class="founder-img"
-      src="https://developers.elementor.com/docs/assets/img/elementor-placeholder-image.png"
-      alt="застовниця школи"
-    />
+
     <div class="founder-info">
       <p class="founder-name">Karina</p>
       <p class="founder-description">
         У вас завжди буде домашнє завдання на платформі, після виконання якого,
         ви отримуєте фідбек від викладача. В кінці кожного уроку, вчитель також
         надає вам фідбек про урок.
+      </p>
+    </div>
+  </div>
+</section> -->
+<section class="founder container">
+  <img
+    class="founder-img"
+    src="https://developers.elementor.com/docs/assets/img/elementor-placeholder-image.png"
+    alt="застовниця школи"
+  />
+  <div class="founder-card">
+    <div class="founder-title-wrapper">
+      <span class="founder-dot"></span>
+      <h3 class="founder-title">Наша засновниця</h3>
+    </div>
+    <div class="founder-content">
+      <p class="founder-name">Karina</p>
+      <hr class="founder-divider" />
+
+      <p class="founder-text">
+        With over a decade of experience as a landlord, I know exactly what the
+        daily challenges of property rental management are. From handling tenant
+        inquiries and sharing property details, to preparing leases, tracking
+        payments, managing inventory, and finalizing deposits. These tasks
+        require landlords to manage repetitive processes at every step with
+        every rental property. That's why... less time-consuming.
       </p>
     </div>
   </div>
@@ -110,14 +138,16 @@
           src="https://soft-octave-f8d.notion.site/image/https%3A%2F%2Fprod-files-secure.s3.us-west-2.amazonaws.com%2F4d9f58b6-8a63-44d5-abdb-5d2e202659f0%2Fb7d1b4ef-afbb-45c8-af5d-d1b26d2eec2c%2FScreenshot_2024-08-21_at_13.01.10.png?table=block&id=f444d266-8a60-4503-b22c-79d366a74ee6&spaceId=4d9f58b6-8a63-44d5-abdb-5d2e202659f0&width=480&userId=&cache=v2"
           alt="вчитель школи"
         />
-        <h3>Tanya</h3>
-        <ul>
-          <li>Досвід викладання 4+ років</li>
-          <li>Підтверджений рівень англійської С1</li>
-          <li>Філологічна освіта (Бакалавр)</li>
-          <li>Методистка нашої школи</li>
-          <li>Проходження курсів з методики на більше ніж 120+ годин</li>
-          <li>
+        <h3 class="teachers-item-title">Tanya</h3>
+        <ul class="teachers-item-list">
+          <li class="skills-item">Досвід викладання 4+ років</li>
+          <li class="skills-item">Підтверджений рівень англійської С1</li>
+          <li class="skills-item">Філологічна освіта (Бакалавр)</li>
+          <li class="skills-item">Методистка нашої школи</li>
+          <li class="skills-item">
+            Проходження курсів з методики на більше ніж 120+ годин
+          </li>
+          <li class="skills-item">
             З радістю обговорить на уроках з вами серіал The Office та буде
             спонукати до правильної вимови слів.
           </li>
@@ -129,17 +159,19 @@
           src="https://soft-octave-f8d.notion.site/image/https%3A%2F%2Fprod-files-secure.s3.us-west-2.amazonaws.com%2F4d9f58b6-8a63-44d5-abdb-5d2e202659f0%2Fb7d1b4ef-afbb-45c8-af5d-d1b26d2eec2c%2FScreenshot_2024-08-21_at_13.01.10.png?table=block&id=f444d266-8a60-4503-b22c-79d366a74ee6&spaceId=4d9f58b6-8a63-44d5-abdb-5d2e202659f0&width=480&userId=&cache=v2"
           alt="вчитель школи"
         />
-        <h3>Khrystyna</h3>
-        <ul>
-          <li>Досвід викладання 5+ років</li>
-          <li>Вища філологічна освіта (Диплом магістра)</li>
-          <li>Підтверджений рівень англійської С1</li>
-          <li>
+        <h3 class="teachers-item-title">Khrystyna</h3>
+        <ul class="teachers-item-list">
+          <li class="skills-item">Досвід викладання 5+ років</li>
+          <li class="skills-item">Вища філологічна освіта (Диплом магістра)</li>
+          <li class="skills-item">Підтверджений рівень англійської С1</li>
+          <li class="skills-item">
             Христина захоплюється саморозвитком, постійно навчається та підвищує
             свою кваліфікацію.
           </li>
-          <li>Обожнює читати книжки та відвідувати цікаві івенти.</li>
-          <li>
+          <li class="skills-item">
+            Обожнює читати книжки та відвідувати цікаві івенти.
+          </li>
+          <li class="skills-item">
             Христина відкрита, добра, сучасна та завжди відкрита до всього
             нового
           </li>
@@ -151,20 +183,20 @@
           src="https://soft-octave-f8d.notion.site/image/https%3A%2F%2Fprod-files-secure.s3.us-west-2.amazonaws.com%2F4d9f58b6-8a63-44d5-abdb-5d2e202659f0%2Fb7d1b4ef-afbb-45c8-af5d-d1b26d2eec2c%2FScreenshot_2024-08-21_at_13.01.10.png?table=block&id=f444d266-8a60-4503-b22c-79d366a74ee6&spaceId=4d9f58b6-8a63-44d5-abdb-5d2e202659f0&width=480&userId=&cache=v2"
           alt="вчитель школи"
         />
-        <h3>Nastya</h3>
-        <ul>
-          <li>Досвід викладання 4+ років</li>
-          <li>Рівень англійської С1</li>
-          <li>Філологічна освітa</li>
-          <li>
+        <h3 class="teachers-item-title">Nastya</h3>
+        <ul class="teachers-item-list">
+          <li class="skills-item">Досвід викладання 4+ років</li>
+          <li class="skills-item">Рівень англійської С1</li>
+          <li class="skills-item">Філологічна освітa</li>
+          <li class="skills-item">
             Досвід викладання дітям, підліткам, дорослим, у індивідуальному,
             праному та груповому форматі. Досвід підготовки до НМТ/ЗНО
           </li>
-          <li>
+          <li class="skills-item">
             Полюбляє читати книжки про психологію, дивитись серіали, малювати та
             проводити час з друзями.
           </li>
-          <li>
+          <li class="skills-item">
             Особливо полюбляє грати в настольні ігри, тому на заняттях будете
             грати в Alias та Monopoly.
           </li>
@@ -176,18 +208,20 @@
           src="https://soft-octave-f8d.notion.site/image/https%3A%2F%2Fprod-files-secure.s3.us-west-2.amazonaws.com%2F4d9f58b6-8a63-44d5-abdb-5d2e202659f0%2Fb7d1b4ef-afbb-45c8-af5d-d1b26d2eec2c%2FScreenshot_2024-08-21_at_13.01.10.png?table=block&id=f444d266-8a60-4503-b22c-79d366a74ee6&spaceId=4d9f58b6-8a63-44d5-abdb-5d2e202659f0&width=480&userId=&cache=v2"
           alt="вчитель школи"
         />
-        <h3>Yulia</h3>
-        <ul>
-          <li>Досвід викладання 5+ років</li>
-          <li>Рівень англійської С1</li>
-          <li>Філологічна освіта</li>
-          <li>
+        <h3 class="teachers-item-title">Yulia</h3>
+        <ul class="teachers-item-list">
+          <li class="skills-item">Досвід викладання 5+ років</li>
+          <li class="skills-item">Рівень англійської С1</li>
+          <li class="skills-item">Філологічна освіта</li>
+          <li class="skills-item">
             Юлія, справжній креативний дух, завжди готова ділитись своїми
             подорожами та враженнями. Також в неї двоє чарівних котів, які
             завжди додають затишку у її життя.
           </li>
-          <li>Вміє зробити навчання легким і цікавим.</li>
-          <li>Юлія завжди готова підтримати вас на уроках та поза ними.</li>
+          <li class="skills-item">Вміє зробити навчання легким і цікавим.</li>
+          <li class="skills-item">
+            Юлія завжди готова підтримати вас на уроках та поза ними.
+          </li>
         </ul>
       </li>
       <li class="teachers-item swiper-slide">
@@ -196,30 +230,36 @@
           src="https://soft-octave-f8d.notion.site/image/https%3A%2F%2Fprod-files-secure.s3.us-west-2.amazonaws.com%2F4d9f58b6-8a63-44d5-abdb-5d2e202659f0%2Fb7d1b4ef-afbb-45c8-af5d-d1b26d2eec2c%2FScreenshot_2024-08-21_at_13.01.10.png?table=block&id=f444d266-8a60-4503-b22c-79d366a74ee6&spaceId=4d9f58b6-8a63-44d5-abdb-5d2e202659f0&width=480&userId=&cache=v2"
           alt="вчитель школи"
         />
-        <h3>Kate</h3>
-        <ul>
-          <li>Рівень англійської С1</li>
-          <li>Учасниця Erasmus та AIESEC програмах</li>
-          <li>
+        <h3 class="teachers-item-title">Kate</h3>
+        <ul class="teachers-item-list">
+          <li class="skills-item">Рівень англійської С1</li>
+          <li class="skills-item">Учасниця Erasmus та AIESEC програмах</li>
+          <li class="skills-item">
             Досвід викладання підліткам та дорослим в парному та груповому
             форматі
           </li>
-          <li>Підготовка до НМТ та IELTS</li>
-          <li>University of Tartu in Estonia (4th year of study)</li>
-          <li>Taroslav Mudryi National Law University (International Law)</li>
+          <li class="skills-item">Підготовка до НМТ та IELTS</li>
+          <li class="skills-item">
+            University of Tartu in Estonia (4th year of study)
+          </li>
+          <li class="skills-item">
+            Taroslav Mudryi National Law University (International Law)
+          </li>
         </ul>
       </li>
     </ul>
     <div class="swiper-pagination"></div>
 
-    <!-- If we need navigation buttons -->
     <div class="swiper-button-prev"></div>
     <div class="swiper-button-next"></div>
   </div>
 </section>
 
     <section class="container prices">
-  <h2 class="prices-title">Плани</h2>
+  <div class="prices-title-wrapper">
+    <span class="prices-dot"></span>
+    <h2 class="prices-title">Плани</h2>
+  </div>
   <ul class="prices-list">
     <li class="prices-card">
       <h3 class="prices-card-title">Індивідуальне навчання</h3>
@@ -261,16 +301,15 @@
 </section>
 
     <section class="container booking">
-  <h2>Запишись на перше пробне заняття</h2>
-  <form action="">
-    <!-- <label for="">Email</label> -->
-    <div>
+  <h2 class="booking-title">Запишись на перше пробне заняття</h2>
+  <form action="" class="booking-form">
+    <div class="booking-maininfo">
       <input type="text" placeholder="Email address" />
       <input type="text" placeholder="Імʼя" />
     </div>
 
-    <div>
-      <label for="age">Вибери свій вік</label>
+    <div class="booking-age-group">
+      <label class="booking-title-label" for="age">Вибери свій вік</label>
       <input type="radio" id="14-18" name="age" />
       <label for="14-18">14-18 років </label>
       <input type="radio" id="19-25" name="age" />
@@ -279,7 +318,9 @@
       <label for="25+">25+ років </label>
     </div>
     <div>
-      <label for="level">Який в тебе приблизно рівень?</label>
+      <label class="booking-title-label" for="level"
+        >Який в тебе приблизно рівень?</label
+      >
       <input type="radio" id="A0" name="level" />
       <label for="A0">A0</label>
       <input type="radio" id="A1" name="level" />
@@ -293,23 +334,40 @@
       <input type="radio" id="C1-C2" name="level" />
       <label for="C1-C2">C1-C2</label>
     </div>
+    <div>
+      <label for="goal" class="booking-title-label"
+        >Яка ціль вивчення мови? (Можете написати свій ваірант)
+      </label>
+      <div class="booking-goal-group">
+        <label for="work">
+          <input type="radio" id="work" name="goal" /> Для роботи
+        </label>
+        <label for="exams">
+          <input type="radio" id="exams" name="goal" /> Підготовка для ЗНО/НМТ
+        </label>
+        <label for="common">
+          <input type="radio" id="common" name="goal" /> Для вільного
+          спілкування/Загальна англійська
+        </label>
 
-    <input type="text" />
-    <label for=""></label>
-    <input type="text" />
-    <label for=""></label>
-    <input type="text" />
-    <label for=""></label>
-    <input type="text" />
-    <label for=""></label>
-    <input type="text" />
-    <label for=""></label>
-    <input type="text" />
-    <label for=""></label>
-    <input type="text" />
-    <label for=""></label> <input type="text" />
-    <label for=""></label>
-    <input type="text" />
+        <label for="other_goal">
+          <input type="radio" name="language_goal" value="other" />
+          Other:
+          <input
+            type="text"
+            name="other_goal"
+            placeholder="Введіть свій варіант"
+          />
+        </label>
+      </div>
+    </div>
+    <div>
+      <label for="telegram" class="booking-title-label"
+        >Залиш посилання на телеграм для подальшого зв'язку 💗
+      </label>
+      <input id="telegram" type="text" />
+    </div>
+
     <button type="submit">Відправити</button>
   </form>
 </section>
@@ -325,50 +383,57 @@
   </ul>
 </section>
 
-    <section>
-  <h2>Твій перший крок у вивченні англійської самостійно.</h2>
-  <p>
+    <section class="container products">
+  <h2 class="products-title">
+    Твій перший крок у вивченні англійської самостійно.
+  </h2>
+  <p class="products-text">
     В цьому гайді зібрана всі корисна інформація, поради, як почати самостійно
     вивчати мову ефективно. Всі посилання є активними, треба на них лише
     натиснути.
   </p>
-  <h3>Кому буде корисний цей гайд?</h3>
-  <ul>
-    <li>Тим, хто дуже хоче вивчати мову, але не знає з чого почати.</li>
-    <li>
+  <h3 class="products-undertitle">Кому буде корисний цей гайд?</h3>
+  <ul class="products-list">
+    <li class="products-list-item">
+      Тим, хто дуже хоче вивчати мову, але не знає з чого почати.
+    </li>
+    <li class="products-list-item">
       Тим, хто серед усієї інформації в інтернеті вже загубився шукати
       англомовні, цікаві канали або фільми.
     </li>
-    <li>Тим, хто не знає де дивитись фільми в оригінали</li>
-    <li>
+    <li class="products-list-item">
+      Тим, хто не знає де дивитись фільми в оригінали
+    </li>
+    <li class="products-list-item">
       Тим, хто хоче отримати класні ресурси з підручниками для вивчення
       англійської - безкоштовно!
     </li>
   </ul>
   <a
+    class="products-btn"
+    target="_blank"
     href="https://drive.google.com/file/d/1kEjGR-EzdElOuz0JwFtfoh4-KgGZRYIK/view?usp=sharing"
     >Відкрити</a
   >
 </section>
 
-    <footer>
-  <img src="/movalova/assets/logo-beige-d6f766e5.png" alt="movalova logo" />
-  <div>
-    <h3>Контакти</h3>
-    <ul>
-      <li></li>
-      <li></li>
-      <li></li>
+    <footer class="container footer">
+  <img class="footer-logo" src="/movalova/assets/logo-beige-d6f766e5.png" alt="movalova logo" />
+  <div class="footer-contacts">
+    <h3 class="contacts-title">Контакти</h3>
+    <ul class="contacts-list">
+      <li>your email</li>
+      <li>phone number</li>
     </ul>
   </div>
-  <div>
-    <ul>
-      <li>
+  <div class="footer-social">
+    <ul class="social-list">
+      <li class="social-item">
         <a href="https://www.instagram.com/mova.lovaa/"
           ><i class="bi bi-instagram"></i
         ></a>
       </li>
-      <li>
+      <li class="social-item">
         <a><i class="bi bi-telegram"></i></a>
       </li>
     </ul>
