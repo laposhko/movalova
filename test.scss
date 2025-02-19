@@ -1,0 +1,28 @@
+.products {
+  padding: 2rem;
+  text-align: center;
+}
+
+.products-title {
+  font-family: 'Marcellus SC', serif;
+  font-size: 2rem;
+}
+
+.products-text {
+  font-size: 1rem;
+  margin-bottom: 1rem;
+}
+
+.products-list {
+  display: grid;
+  gap: 1rem;
+}
+
+.products-btn {
+  display: inline-block;
+  padding: 0.75rem 1.5rem;
+  background: #9c8368;
+  color: white;
+  border-radius: 5px;
+  text-decoration: none;
+}

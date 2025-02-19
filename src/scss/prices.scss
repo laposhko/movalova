@@ -4,33 +4,66 @@
 .prices {
   padding-top: 40px;
   padding-bottom: 40px;
-  background-color: $brand-color;
+  text-align: center;
+  // background: linear-gradient(180deg, $brand-color 10%, $background-color 100%);
+}
+
+.prices-title-wrapper {
+  display: flex;
+  margin-bottom: 20px;
+  width: 200px;
+  align-items: center;
+  gap: 0.5rem;
+  background: $background-color;
+  padding: 0.5rem 1rem;
+  border-radius: 10px;
+  top: -10px;
+  left: 0;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+.prices-dot {
+  width: 10px;
+  height: 10px;
+  background: $pink-color; // Accent color
+  border-radius: 50%;
 }
 .prices-title {
-  color: $secondary-color;
-  margin-bottom: 20px;
+  font-family: 'Marcellus SC', serif;
+  font-size: 1.7rem;
+
+  // color: $secondary-color;
   text-align: center;
 }
 .prices-list {
-  display: flex;
-  flex-direction: column;
-  gap: 10px;
+  display: grid;
+  gap: 1.5rem;
 }
 .prices-card {
-  background-color: $background-color;
+  background-color: $white-color;
   padding: 15px;
   border-radius: 20px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  border-left: 5px solid $contrast-color;
+
+  transition: transform 0.3s ease-in-out;
+  &:hover {
+    transform: scale(1.05);
+    background-color: $background-color;
+  }
 }
 .prices-card-title {
   margin-bottom: 10px;
+  font-size: 1.5rem;
+  font-weight: bold;
 }
 .prices-card-description {
   @include font(16, 20);
-  margin-bottom: 10px;
+  margin-bottom: 40px;
 }
 .prices-card-price {
-  background-color: $brand-color;
-  padding: 10px 15px;
+  background-color: $contrast-color;
+  padding: 10px 20px;
   border-radius: 20px;
+  font-weight: bold;
   color: $secondary-color;
 }

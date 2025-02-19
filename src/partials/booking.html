@@ -1,14 +1,13 @@
 <section class="container booking">
-  <h2>Запишись на перше пробне заняття</h2>
-  <form action="">
-    <!-- <label for="">Email</label> -->
-    <div>
+  <h2 class="booking-title">Запишись на перше пробне заняття</h2>
+  <form action="" class="booking-form">
+    <div class="booking-maininfo">
       <input type="text" placeholder="Email address" />
       <input type="text" placeholder="Імʼя" />
     </div>
 
-    <div>
-      <label for="age">Вибери свій вік</label>
+    <div class="booking-age-group">
+      <label class="booking-title-label" for="age">Вибери свій вік</label>
       <input type="radio" id="14-18" name="age" />
       <label for="14-18">14-18 років </label>
       <input type="radio" id="19-25" name="age" />
@@ -17,7 +16,9 @@
       <label for="25+">25+ років </label>
     </div>
     <div>
-      <label for="level">Який в тебе приблизно рівень?</label>
+      <label class="booking-title-label" for="level"
+        >Який в тебе приблизно рівень?</label
+      >
       <input type="radio" id="A0" name="level" />
       <label for="A0">A0</label>
       <input type="radio" id="A1" name="level" />
@@ -31,23 +32,40 @@
       <input type="radio" id="C1-C2" name="level" />
       <label for="C1-C2">C1-C2</label>
     </div>
+    <div>
+      <label for="goal" class="booking-title-label"
+        >Яка ціль вивчення мови? (Можете написати свій ваірант)
+      </label>
+      <div class="booking-goal-group">
+        <label for="work">
+          <input type="radio" id="work" name="goal" /> Для роботи
+        </label>
+        <label for="exams">
+          <input type="radio" id="exams" name="goal" /> Підготовка для ЗНО/НМТ
+        </label>
+        <label for="common">
+          <input type="radio" id="common" name="goal" /> Для вільного
+          спілкування/Загальна англійська
+        </label>
 
-    <input type="text" />
-    <label for=""></label>
-    <input type="text" />
-    <label for=""></label>
-    <input type="text" />
-    <label for=""></label>
-    <input type="text" />
-    <label for=""></label>
-    <input type="text" />
-    <label for=""></label>
-    <input type="text" />
-    <label for=""></label>
-    <input type="text" />
-    <label for=""></label> <input type="text" />
-    <label for=""></label>
-    <input type="text" />
+        <label for="other_goal">
+          <input type="radio" name="language_goal" value="other" />
+          Other:
+          <input
+            type="text"
+            name="other_goal"
+            placeholder="Введіть свій варіант"
+          />
+        </label>
+      </div>
+    </div>
+    <div>
+      <label for="telegram" class="booking-title-label"
+        >Залиш посилання на телеграм для подальшого зв'язку 💗
+      </label>
+      <input id="telegram" type="text" />
+    </div>
+
     <button type="submit">Відправити</button>
   </form>
 </section>

@@ -10,13 +10,15 @@
 @use 'footer.scss';
 @import 'common/vars';
 @import 'common/mixins';
-
+@import url('https://fonts.googleapis.com/css2?family=Lora:ital,wght@1,400..700&family=Marcellus+SC&display=swap');
 :root {
-  font-family: Inter, Avenir, Helvetica, Arial, sans-serif;
+  // font-family: Inter, Avenir, Helvetica, Arial, sans-serif;
   font-size: 16px;
   line-height: 24px;
   font-weight: 400;
-
+  font-family: 'Lora', serif;
+  font-style: italic;
+  font-style: normal;
   color: $text_color;
   background-color: $background-color;
 
@@ -48,4 +50,14 @@
   100% {
     transform: scale(1.2);
   }
+}
+body {
+  // background-color: #f8f9fa; /* Lighter background */
+  // color: #333; /* Adjust text color for readability */
+}
+
+h1,
+h2,
+h3 {
+  font-family: 'Marcellus SC', serif;
 }

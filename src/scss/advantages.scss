@@ -1,21 +1,81 @@
 @import 'common/vars';
 
+// .advantages {
+//   padding-top: 40px;
+// }
+// .advantages-title {
+//   color: $brand_color;
+//   margin-bottom: 20px;
+// }
+// .advantages-list {
+//   display: flex;
+//   flex-wrap: wrap;
+//   gap: 8px;
+// }
+// .advantages-item {
+//   flex-basis: calc(100% / 3 - 8px);
+//   background-color: $brand_color;
+//   border-radius: 15px;
+//   padding: 10px;
+//   color: $secondary-color;
+// }
 .advantages {
-  padding-top: 40px;
-}
-.advantages-title {
-  color: $brand_color;
-  margin-bottom: 20px;
-}
-.advantages-list {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 8px;
-}
-.advantages-item {
-  flex-basis: calc(100% / 3 - 8px);
-  background-color: $brand_color;
-  border-radius: 15px;
-  padding: 10px;
-  color: $secondary-color;
+  padding: 2rem;
+
+  // &-title {
+  //   text-align: center;
+  //   color: $brand_color;
+  //   position: absolute;
+  //   border-bottom: 2px solid blue;
+  //   border-right: 2px solid blue;
+
+  //   border-radius: 15px;
+  // }
+  &-title-wrapper {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    background: $second-background-color;
+    padding: 0.5rem 1rem;
+    border-radius: 10px 10px 0 10px;
+    width: 200px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  }
+  &-dot {
+    width: 10px;
+    height: 10px;
+    background: $pink-color; // Accent color
+    border-radius: 50%;
+  }
+  &-title {
+    font-family: 'Marcellus SC', sans-serif;
+
+    font-size: 1.7rem;
+    // font-weight: bold;
+    color: $hover-color;
+  }
+  &-list {
+    list-style: none;
+    padding: 0;
+    padding: 2rem;
+    border-radius: 20px;
+    .advantages-item {
+      background: $secondary_color;
+      background: linear-gradient(
+        94deg,
+        $secondary-color 0%,
+        $background-color 100%
+      );
+
+      padding: 1rem;
+      margin-bottom: 1rem;
+      border-radius: 10px;
+      border-left: 5px solid $brand_color;
+      transition: transform 0.2s;
+
+      &:hover {
+        transform: translateX(10px);
+      }
+    }
+  }
 }
